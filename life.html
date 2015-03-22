@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <script type="text/javascript" src="server.js"></script>
+	<script type="text/javascript" src="aaa.js"></script>
+	<script type="text/javascript" src="bbb.js"></script>
+
+
+  </head>
+  <body>
+
+	<script>
+		tableCreate();
+		document.getElementsByTagName("table")[0].setAttribute("id","tableid")
+	</script>
+	
+	<script>
+		var life = []
+		for (i=0 ; i < 400; i++) {
+			life.push(0);
+		}
+		wait(life)
+	</script> 
+<select id=s1 name=no_year onChange="show_date()";><option value=Jan>choose</option>
+<option value=a1>a1</option>
+<option value=b1>b1</option>
+<option value=c1>c1</option>
+<option value=d1>d1</option>
+</select>
+<div id='msg3'></div>
+
+<input id="clickMe" type="button" value="clickme" onclick="start();" />
+<input id="clickMe" type="button" value="reset" onclick="reset();" />
+<input id="clickMe" type="button" value="pause" onclick="timeout.opt=false" />
+<input id="clickMe" type="button" value="resume" onclick="timeout.opt=true;timeout()" />
+
+
+
+  </body>
+</html>
